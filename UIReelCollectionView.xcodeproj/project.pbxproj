@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453379C825BBB714008CA707 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 453379C525BBB714008CA707 /* test.png */; };
+		453379C925BBB714008CA707 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453379C625BBB714008CA707 /* test@2x.png */; };
+		453379CA25BBB714008CA707 /* test@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 453379C725BBB714008CA707 /* test@3x.png */; };
 		EE00015B24B9E7F7002BF2EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE00015A24B9E7F7002BF2EE /* AppDelegate.m */; };
 		EE00016124B9E7F7002BF2EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE00016024B9E7F7002BF2EE /* ViewController.m */; };
 		EE00016424B9E7F7002BF2EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE00016224B9E7F7002BF2EE /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		453379C525BBB714008CA707 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		453379C625BBB714008CA707 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
+		453379C725BBB714008CA707 /* test@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@3x.png"; sourceTree = "<group>"; };
 		EE00015624B9E7F7002BF2EE /* Reel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE00015924B9E7F7002BF2EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EE00015A24B9E7F7002BF2EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -70,6 +76,9 @@
 				EE00016024B9E7F7002BF2EE /* ViewController.m */,
 				EE00017224B9E9B2002BF2EE /* CollectionViewCell.h */,
 				EE00017324B9E9B2002BF2EE /* CollectionViewCell.m */,
+				453379C525BBB714008CA707 /* test.png */,
+				453379C625BBB714008CA707 /* test@2x.png */,
+				453379C725BBB714008CA707 /* test@3x.png */,
 				EE00017524B9EA31002BF2EE /* UIReelCollectionViewFlowLayout.h */,
 				EE00017624B9EA31002BF2EE /* UIReelCollectionViewFlowLayout.m */,
 				EE00016224B9E7F7002BF2EE /* Main.storyboard */,
@@ -139,8 +148,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE00016924B9E7F7002BF2EE /* LaunchScreen.storyboard in Resources */,
+				453379C925BBB714008CA707 /* test@2x.png in Resources */,
 				EE00016624B9E7F7002BF2EE /* Assets.xcassets in Resources */,
+				453379CA25BBB714008CA707 /* test@3x.png in Resources */,
 				EE00016424B9E7F7002BF2EE /* Main.storyboard in Resources */,
+				453379C825BBB714008CA707 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

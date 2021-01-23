@@ -37,9 +37,25 @@
     
     for (UICollectionViewLayoutAttributes *attributes in attributesArray) {
         CGFloat delta = attributes.center.x - ceterX;
-        CGFloat scale = (1.1 - ABS(delta) / self.collectionView.frame.size.width) * scale_coefficient;
-        CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
-        attributes.transform = CGAffineTransformRotate(transform, (delta/self.collectionView.frame.size.width) * rotate_coefficient);
+        NSLog(@"Y:%.3f",delta/self.collectionView.frame.size.width);
+        CGFloat scale = (1.1- ABS(delta) / self.collectionView.frame.size.width) * scale_coefficient;
+        NSLog(@"Scale:%.3f",scale);
+        
+//        CGAffineTransform transform = CGAffineTransformMakeScale(scale, scale);
+//        attributes.transform = CGAffineTransformRotate(transform, (delta/self.collectionView.frame.size.width) * rotate_coefficient);
+        
+        
+        //2.f * delta/self.collectionView.frame.size.width
+        CATransform3D scale3D = CATransform3DIdentity;//CATransform3DScale(CATransform3DIdentity , 1.f, 1.f, 0.5f);
+        // 0-> 2
+        CATransform3D rotationTransform3D;
+        if (ceterX > attributes.center.x){
+            rotationTransform3D = CATransform3DMakeRotation(-0.78f *  ( (ceterX - attributes.center.x)/self.collectionView.frame.size.width), 0.f, 1.f, 0.f);
+        }else{
+            //2.2f * ( (ceterX - attributes.center.x)/self.collectionView.frame.size.width)
+            rotationTransform3D = CATransform3DMakeRotation(0.78, 0.f, 1.f, 0.f);
+        }
+        attributes.transform3D = CATransform3DConcat(scale3D, rotationTransform3D);
     }
     return attributesArray;
 }
